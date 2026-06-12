@@ -1,0 +1,6 @@
+print("=== 4.43 ===")
+x, y = map(float, input("Введите x, y: ").split())
+if x > 0 and y > 0 and y < -x + 2:
+    print("Точка попадает в область I")
+else:
+    print("Точка не попадает в область I")
