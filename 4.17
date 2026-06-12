@@ -1,0 +1,9 @@
+def find_age(year, month, year_today, month_today):
+    if 0 > month > 13 or 0 > month_today > 13 or not isinstance(month, int) or not isinstance(month_today, int) \
+            or not isinstance(year, int) or not isinstance(year_today, int):
+        return 'v'
+    if month > month_today:
+        full_year = year_today - year - 1
+    elif month <= month_today:
+        full_year = year_today - year
+    return f'возраст {full_year}'
