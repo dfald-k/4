@@ -1,0 +1,8 @@
+print("=== 4.21 ===")
+x1, y1, w1, h1 = map(float, input("Первый прямоугольник (x y w h): ").split())
+x2, y2, w2, h2 = map(float, input("Второй прямоугольник (x y w h): ").split())
+xmin = min(x1, x2)
+ymin = min(y1, y2)
+xmax = max(x1 + w1, x2 + w2)
+ymax = max(y1 + h1, y2 + h2)
+print(f"Минимальный прямоугольник: ({xmin}, {ymin}) - ({xmax}, {ymax})")
