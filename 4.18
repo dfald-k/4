@@ -1,0 +1,19 @@
+import math
+def fit_in(Ssquare, Scircle):
+    ans = []
+
+    a = math.sqrt(Ssquare)
+    r = math.sqrt(Scircle / math.pi)
+    diam = 2 * r
+    diag = math.sqrt(a**2 + a ** 2)
+
+    if diam <= a:
+        ans.append('Круг вместится в квадрат')
+    else:
+        ans.append('Круг не вместится в квадрат')
+
+    if diag <= diam:
+        ans.append('Квадрат вместится в круг')
+    else:
+        ans.append('Квадрат НЕ вместится в круг')
+    return ans
