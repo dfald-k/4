@@ -1,0 +1,10 @@
+import math
+def func(x):
+    if math.sin(x) < 0:
+        k = abs(x)
+    else:
+        k = x ** 2
+    if k < x:
+        return abs(x)
+    else:
+        return k * x
