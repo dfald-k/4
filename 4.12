@@ -1,0 +1,11 @@
+import math
+def Ssquare_or_Scirle(square_a, circle_r):
+    Ssquare = square_a ** 2
+    Scircle = math.pi * (circle_r ** 2)
+
+    if Ssquare > Scircle:
+        return f'Площадь квадрата больше круга'
+    elif Ssquare < Scircle:
+        return f'Площадь круга больше квадрата'
+    elif Ssquare == Scircle:
+        return f'Площади равны'
